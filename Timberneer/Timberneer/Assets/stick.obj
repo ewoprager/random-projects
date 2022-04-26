@@ -1,0 +1,31 @@
+# a stick
+
+usemtl stick
+ 
+v -0.1  0.0 -0.8 # 1
+v  0.1  0.0 -0.8 # 2
+v  0.1  0.0  0.8 # 3
+v -0.1  0.0  0.8 # 4
+v -0.1  0.2 -0.8 # 5
+v  0.1  0.2 -0.8 # 6
+v  0.1  0.2  0.8 # 7
+v -0.1  0.2  0.8 # 8
+
+# sides
+vt 0.038 0.098 # 1 bottom left
+vt 0.938 0.984 # 2 top left
+vt 0.98  0.948 # 3 top right
+vt 0.09  0.04  # 4 bottom right
+
+# end
+vt 0.82  0.854 # 5 bottom left
+vt 0.82  0.828 # 6 top left
+vt 0.856 0.828 # 7 top right
+vt 0.856 0.854 # 8 bottom right
+ 
+f 1/1 2/2 3/3 4/4 # bottom
+f 1/1 4/2 8/3 5/4 # close
+f 3/1 2/2 6/3 7/4 # far
+f 2/5 1/6 5/7 6/8 # left
+f 4/5 3/6 7/7 8/8 # right
+f 5/1 8/2 7/3 6/4 # top
