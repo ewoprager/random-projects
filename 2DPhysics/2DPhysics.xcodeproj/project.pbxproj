@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8942733F24855F07005357B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8942733E24855F07005357B3 /* main.cpp */; };
+		8942734C24855F5C005357B3 /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8942734A24855F5C005357B3 /* App.cpp */; };
+		8942735624856697005357B3 /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8942735424856697005357B3 /* Vector2D.cpp */; };
+		8942735A24857C87005357B3 /* CollisionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8942735824857C87005357B3 /* CollisionHandler.cpp */; };
+		899B864C24893FF3000667EE /* RigidbodyParent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 899B864B24893FF3000667EE /* RigidbodyParent.cpp */; };
+		89DAF5E1248BE0EF005D7BE5 /* Polygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89DAF5DF248BE0EF005D7BE5 /* Polygon.cpp */; };
+		89DAF5E4248C500F005D7BE5 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89DAF5E2248C500F005D7BE5 /* Circle.cpp */; };
+		8DFC7AA2281857B60043139C /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFC7AA1281857B60043139C /* libSDL2-2.0.0.dylib */; };
+		8DFC7AA3281857B60043139C /* libSDL2-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 8DFC7AA1281857B60043139C /* libSDL2-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8942733924855F07005357B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8DFC7AA4281857B60043139C /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8DFC7AA3281857B60043139C /* libSDL2-2.0.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8942733B24855F07005357B3 /* 2DPhysics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2DPhysics; sourceTree = BUILT_PRODUCTS_DIR; };
+		8942733E24855F07005357B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8942734624855F2C005357B3 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		8942734A24855F5C005357B3 /* App.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
+		8942734B24855F5C005357B3 /* App.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = App.hpp; sourceTree = "<group>"; };
+		8942734E24856338005357B3 /* ObjectParent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ObjectParent.hpp; sourceTree = "<group>"; };
+		8942735424856697005357B3 /* Vector2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2D.cpp; sourceTree = "<group>"; };
+		8942735524856697005357B3 /* Vector2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector2D.hpp; sourceTree = "<group>"; };
+		89427357248569D0005357B3 /* RigidbodyParent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RigidbodyParent.hpp; sourceTree = "<group>"; };
+		8942735824857C87005357B3 /* CollisionHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CollisionHandler.cpp; sourceTree = "<group>"; };
+		8942735924857C87005357B3 /* CollisionHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CollisionHandler.hpp; sourceTree = "<group>"; };
+		899B864B24893FF3000667EE /* RigidbodyParent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RigidbodyParent.cpp; sourceTree = "<group>"; };
+		89DAF5DF248BE0EF005D7BE5 /* Polygon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Polygon.cpp; sourceTree = "<group>"; };
+		89DAF5E0248BE0EF005D7BE5 /* Polygon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Polygon.hpp; sourceTree = "<group>"; };
+		89DAF5E2248C500F005D7BE5 /* Circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		89DAF5E3248C500F005D7BE5 /* Circle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Circle.hpp; sourceTree = "<group>"; };
+		8DFC7AA1281857B60043139C /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../opt/local/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8942733824855F07005357B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DFC7AA2281857B60043139C /* libSDL2-2.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8942733224855F07005357B3 = {
+			isa = PBXGroup;
+			children = (
+				8942733D24855F07005357B3 /* 2DPhysics */,
+				8942733C24855F07005357B3 /* Products */,
+				8942734524855F2C005357B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8942733C24855F07005357B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8942733B24855F07005357B3 /* 2DPhysics */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8942733D24855F07005357B3 /* 2DPhysics */ = {
+			isa = PBXGroup;
+			children = (
+				8942735524856697005357B3 /* Vector2D.hpp */,
+				8942735424856697005357B3 /* Vector2D.cpp */,
+				8942734B24855F5C005357B3 /* App.hpp */,
+				8942734E24856338005357B3 /* ObjectParent.hpp */,
+				89427357248569D0005357B3 /* RigidbodyParent.hpp */,
+				899B864B24893FF3000667EE /* RigidbodyParent.cpp */,
+				89DAF5E0248BE0EF005D7BE5 /* Polygon.hpp */,
+				89DAF5DF248BE0EF005D7BE5 /* Polygon.cpp */,
+				89DAF5E3248C500F005D7BE5 /* Circle.hpp */,
+				89DAF5E2248C500F005D7BE5 /* Circle.cpp */,
+				8942735924857C87005357B3 /* CollisionHandler.hpp */,
+				8942735824857C87005357B3 /* CollisionHandler.cpp */,
+				8942734A24855F5C005357B3 /* App.cpp */,
+				8942733E24855F07005357B3 /* main.cpp */,
+			);
+			path = 2DPhysics;
+			sourceTree = "<group>";
+		};
+		8942734524855F2C005357B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DFC7AA1281857B60043139C /* libSDL2-2.0.0.dylib */,
+				8942734624855F2C005357B3 /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8942733A24855F07005357B3 /* 2DPhysics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8942734224855F07005357B3 /* Build configuration list for PBXNativeTarget "2DPhysics" */;
+			buildPhases = (
+				8942733724855F07005357B3 /* Sources */,
+				8942733824855F07005357B3 /* Frameworks */,
+				8942733924855F07005357B3 /* CopyFiles */,
+				8DFC7AA4281857B60043139C /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 2DPhysics;
+			productName = 2DPhysics;
+			productReference = 8942733B24855F07005357B3 /* 2DPhysics */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8942733324855F07005357B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = EP;
+				TargetAttributes = {
+					8942733A24855F07005357B3 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 8942733624855F07005357B3 /* Build configuration list for PBXProject "2DPhysics" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8942733224855F07005357B3;
+			productRefGroup = 8942733C24855F07005357B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8942733A24855F07005357B3 /* 2DPhysics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8942733724855F07005357B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89DAF5E4248C500F005D7BE5 /* Circle.cpp in Sources */,
+				8942733F24855F07005357B3 /* main.cpp in Sources */,
+				89DAF5E1248BE0EF005D7BE5 /* Polygon.cpp in Sources */,
+				8942734C24855F5C005357B3 /* App.cpp in Sources */,
+				8942735624856697005357B3 /* Vector2D.cpp in Sources */,
+				8942735A24857C87005357B3 /* CollisionHandler.cpp in Sources */,
+				899B864C24893FF3000667EE /* RigidbodyParent.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8942734024855F07005357B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8942734124855F07005357B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8942734324855F07005357B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8942734424855F07005357B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8942733624855F07005357B3 /* Build configuration list for PBXProject "2DPhysics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8942734024855F07005357B3 /* Debug */,
+				8942734124855F07005357B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8942734224855F07005357B3 /* Build configuration list for PBXNativeTarget "2DPhysics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8942734324855F07005357B3 /* Debug */,
+				8942734424855F07005357B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8942733324855F07005357B3 /* Project object */;
+}
