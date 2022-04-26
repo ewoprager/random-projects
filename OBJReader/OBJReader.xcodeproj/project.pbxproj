@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D7BFE9E276B7E08004A039A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D7BFE9D276B7E08004A039A /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8D095A2F2772335300F6613C /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D7BFE98276B7E08004A039A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8D095A302772341200F6613C /* OBJReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OBJReader.entitlements; sourceTree = "<group>"; };
+		8D095A322772791200F6613C /* TextRead.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TextRead.hpp; path = ../../Tools2/Tools2/TextRead.hpp; sourceTree = "<group>"; };
+		8D095A59277B80B100F6613C /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vec3.hpp; path = "../../../../Documents/Programming/My Headers/vec3.hpp"; sourceTree = "<group>"; };
+		8D7BFE9A276B7E08004A039A /* OBJReader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OBJReader; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7BFE9D276B7E08004A039A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D7BFE97276B7E08004A039A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D7BFE91276B7E08004A039A = {
+			isa = PBXGroup;
+			children = (
+				8D7BFE9C276B7E08004A039A /* OBJReader */,
+				8D7BFE9B276B7E08004A039A /* Products */,
+				8D7BFEA4276B7E5B004A039A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D7BFE9B276B7E08004A039A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D7BFE9A276B7E08004A039A /* OBJReader */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D7BFE9C276B7E08004A039A /* OBJReader */ = {
+			isa = PBXGroup;
+			children = (
+				8D095A59277B80B100F6613C /* vec3.hpp */,
+				8D095A322772791200F6613C /* TextRead.hpp */,
+				8D095A302772341200F6613C /* OBJReader.entitlements */,
+				8D7BFE9D276B7E08004A039A /* main.cpp */,
+			);
+			path = OBJReader;
+			sourceTree = "<group>";
+		};
+		8D7BFEA4276B7E5B004A039A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D7BFE99276B7E08004A039A /* OBJReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D7BFEA1276B7E08004A039A /* Build configuration list for PBXNativeTarget "OBJReader" */;
+			buildPhases = (
+				8D7BFE96276B7E08004A039A /* Sources */,
+				8D7BFE97276B7E08004A039A /* Frameworks */,
+				8D7BFE98276B7E08004A039A /* CopyFiles */,
+				8D095A2F2772335300F6613C /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OBJReader;
+			productName = OBJReader;
+			productReference = 8D7BFE9A276B7E08004A039A /* OBJReader */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D7BFE92276B7E08004A039A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8D7BFE99276B7E08004A039A = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = 8D7BFE95276B7E08004A039A /* Build configuration list for PBXProject "OBJReader" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D7BFE91276B7E08004A039A;
+			productRefGroup = 8D7BFE9B276B7E08004A039A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D7BFE99276B7E08004A039A /* OBJReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D7BFE96276B7E08004A039A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7BFE9E276B7E08004A039A /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8D7BFE9F276B7E08004A039A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8D7BFEA0276B7E08004A039A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8D7BFEA2276B7E08004A039A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OBJReader/OBJReader.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LUSWV884R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/Library/Frameworks,
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-I/opt/local/Library/Frameworks/wxWidgets.framework/Versions/wxWidgets/3.1/lib/wx/include/osx_cocoa-unicode-3.1",
+					"-I/opt/local/Library/Frameworks/wxWidgets.framework/Versions/wxWidgets/3.1/include/wx-3.1",
+					"-D_FILE_OFFSET_BITS=64",
+					"-DWXUSINGDLL",
+					"-D__WXMAC__",
+					"-D__WXOSX__",
+					"-D__WXOSX_COCOA__",
+				);
+				OTHER_LDFLAGS = (
+					"-L/opt/local/Library/Frameworks/wxWidgets.framework/Versions/wxWidgets/3.1/lib",
+					"-framework",
+					IOKit,
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					System,
+					"-framework",
+					OpenGL,
+					"-lwx_osx_cocoau_xrc-3.1",
+					"-lwx_osx_cocoau_html-3.1",
+					"-lwx_osx_cocoau_qa-3.1",
+					"-lwx_osx_cocoau_core-3.1",
+					"-lwx_baseu_xml-3.1",
+					"-lwx_baseu_net-3.1",
+					"-lwx_baseu-3.1",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8D7BFEA3276B7E08004A039A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OBJReader/OBJReader.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LUSWV884R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/Library/Frameworks,
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-I/opt/local/Library/Frameworks/wxWidgets.framework/Versions/wxWidgets/3.1/lib/wx/include/osx_cocoa-unicode-3.1",
+					"-I/opt/local/Library/Frameworks/wxWidgets.framework/Versions/wxWidgets/3.1/include/wx-3.1",
+					"-D_FILE_OFFSET_BITS=64",
+					"-DWXUSINGDLL",
+					"-D__WXMAC__",
+					"-D__WXOSX__",
+					"-D__WXOSX_COCOA__",
+				);
+				OTHER_LDFLAGS = (
+					"-L/opt/local/Library/Frameworks/wxWidgets.framework/Versions/wxWidgets/3.1/lib",
+					"-framework",
+					IOKit,
+					"-framework",
+					Carbon,
+					"-framework",
+					Cocoa,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					System,
+					"-framework",
+					OpenGL,
+					"-lwx_osx_cocoau_xrc-3.1",
+					"-lwx_osx_cocoau_html-3.1",
+					"-lwx_osx_cocoau_qa-3.1",
+					"-lwx_osx_cocoau_core-3.1",
+					"-lwx_baseu_xml-3.1",
+					"-lwx_baseu_net-3.1",
+					"-lwx_baseu-3.1",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D7BFE95276B7E08004A039A /* Build configuration list for PBXProject "OBJReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D7BFE9F276B7E08004A039A /* Debug */,
+				8D7BFEA0276B7E08004A039A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D7BFEA1276B7E08004A039A /* Build configuration list for PBXNativeTarget "OBJReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D7BFEA2276B7E08004A039A /* Debug */,
+				8D7BFEA3276B7E08004A039A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D7BFE92276B7E08004A039A /* Project object */;
+}
