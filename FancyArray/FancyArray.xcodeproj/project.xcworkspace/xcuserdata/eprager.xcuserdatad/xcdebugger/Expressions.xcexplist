@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FancyBranch&lt;int&gt;::Select(bool (* const&amp;)(int), unsigned int*):main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "int* ArraySelect&lt;int&gt;(int*, bool (* const&amp;)(int), unsigned int const&amp;, unsigned int*):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "*(array + 1)">
+            </PersistentString>
+            <PersistentString
+               value = "*(array + 2)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FancyArray&lt;int&gt;::operator[](long const&amp;):main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "main:main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "FancyBranch&lt;int&gt;::FancyBranch(unsigned int const&amp;, int* const&amp;):main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "FancyArray&lt;int&gt;::Select(bool (* const&amp;)(int)):main.cpp">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

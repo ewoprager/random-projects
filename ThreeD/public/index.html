@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ThreeD</title>
+
+		<!--
+		initialize the SDK after all desired features are loaded, set useEmulator to false
+		to avoid connecting the SDK to running emulators.
+		-->
+		<!-- <script defer src="/__/firebase/init.js?useEmulator=true"></script> -->
+	
+		<style>
+			#gameScreen {
+				border: 1px solid black;
+			}
+	
+			img {
+				display: none;
+			}
+		</style>
+ 
+ 	</head>
+	<body>
+		<canvas id="gameScreen" oncontextmenu="return false;">
+			<audio src="Assets/dink.mp3" id="sound_dink"/>
+		</canvas>
+		
+		<!-- shaders for drawing objects -->
+		<script id="vertex-shader-3d" type="x-shader/x-vertex">
+			uniform mat4 u_viewProjection;
+			uniform vec3 u_lightWorldPos;
+			uniform mat4 u_world;
+			uniform mat4 u_viewInverse;
+			uniform mat4 u_worldInverseTranspose;
+
+			attribute vec4 a_position;
+			attribute vec3 a_normal;
+			attribute vec2 a_texcoord;
+
+			varying vec4 v_position;
+			varying vec2 v_texCoord;
+			varying vec3 v_normal;
+			varying vec3 v_surfaceToLight;
+			varying vec3 v_surfaceToView;
+
+			void main() {
+				v_texCoord = a_texcoord;
+				v_position = (u_viewProjection * u_world * a_position);
+				v_normal = (u_worldInverseTranspose * vec4(a_normal, 0)).xyz;
+				v_surfaceToLight = u_lightWorldPos - (u_world * a_position).xyz;
+				v_surfaceToView = (u_viewInverse[3] - (u_world * a_position)).xyz;
+				gl_Position = v_position;
+			}
+		</script>
+		<script id="fragment-shader-3d" type="x-shader/x-fragment">
+			precision mediump float;
+
+			varying vec4 v_position;
+			varying vec2 v_texCoord;
+			varying vec3 v_normal;
+			varying vec3 v_surfaceToLight;
+			varying vec3 v_surfaceToView;
+
+			uniform vec4 u_lightColor;
+			uniform vec4 u_colorMult;
+			uniform sampler2D u_diffuse;
+			uniform vec4 u_specular;
+			uniform float u_shininess;
+			uniform float u_specularFactor;
+
+			vec4 lit(float l, float h, float m) {
+				return vec4(1.0,
+							abs(l),
+							(l > 0.0) ? pow(max(0.0, h), m) : 0.0,
+							1.0);
+			}
+
+			void main() {
+				vec4 diffuseColor = texture2D(u_diffuse, v_texCoord);
+				vec3 a_normal = normalize(v_normal);
+				vec3 surfaceToLight = normalize(v_surfaceToLight);
+				vec3 surfaceToView = normalize(v_surfaceToView);
+				vec3 halfVector = normalize(surfaceToLight + surfaceToView);
+				vec4 litR = lit(dot(a_normal, surfaceToLight), dot(a_normal, halfVector), u_shininess);
+				vec4 outColor = vec4((u_lightColor * (diffuseColor * litR.y * u_colorMult + u_specular * litR.z * u_specularFactor)).rgb, diffuseColor.a);
+				gl_FragColor = outColor;
+				//gl_FragColor = vec4(litR.yyy, 1);
+			}
+		</script>
+		
+		<!-- shaders for getting frontmost objects at positions on screen -->
+		<script  id="pick-vertex-shader" type="x-shader/x-vertex">
+			attribute vec4 a_position;
+			
+			uniform mat4 u_world;
+			uniform mat4 u_viewProjection;
+			
+			void main() {
+				gl_Position = (u_viewProjection * u_world * a_position);
+			}
+		</script>
+		<script  id="pick-fragment-shader" type="x-shader/x-fragment">
+			precision mediump float;
+			
+			uniform vec4 u_id;
+			
+			void main() {
+				gl_FragColor = u_id;
+			}
+		</script>
+		
+		<script type="module" src="/app.js"></script>
+	
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+					https://firebase.google.com/docs/web/setup#available-libraries -->
+		<!-- <script defer src="/__/firebase/8.8.0/firebase-auth.js"></script> -->
+		<!-- <script defer src="/__/firebase/8.8.0/firebase-database.js"></script> -->
+		<!-- <script defer src="/__/firebase/8.8.0/firebase-firestore.js"></script> -->
+		<!-- <script defer src="/__/firebase/8.8.0/firebase-functions.js"></script> -->
+		<!-- <script defer src="/__/firebase/8.8.0/firebase-messaging.js"></script> -->
+		<!-- <script defer src="/__/firebase/8.8.0/firebase-storage.js"></script> -->
+		<!-- <script defer src="/__/firebase/8.8.0/firebase-analytics.js"></script> -->
+		<!-- <script defer src="/__/firebase/8.8.0/firebase-remote-config.js"></script> -->
+		<!-- <script defer src="/__/firebase/8.8.0/firebase-performance.js"></script> -->
+		
+		<script>
+			// Your web app's Firebase configuration
+			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+			var firebaseConfig = {
+				apiKey: "AIzaSyDqjA7IY-2vzxCNafWPGx8KSuufwPpAIYE",
+				authDomain: "threed-c1eab.firebaseapp.com",
+				projectId: "threed-c1eab",
+				storageBucket: "threed-c1eab.appspot.com",
+				messagingSenderId: "613129385016",
+				appId: "1:613129385016:web:aff1c281647e14d0c6a2cd",
+				measurementId: "G-0RT0BR78QR"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			//firebase.analytics();
+		</script>
+	</body>
+</html>
